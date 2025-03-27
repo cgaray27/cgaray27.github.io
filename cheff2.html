@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Agentes de Prueba Agent</title>
+    </head>
+    <body>
+        <h1>Agente de Ejemplo</h1>
+        <p>Agente basico para web site :)</p>
+        <p>Agente de Atención al Cliente - Cheff2</p>
+
+            </body>
+<script defer src="https://openai-widget.web.app/ChatComponent.bundle.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Check if the chat container exists
+    var chatContainer = document.getElementById('chat-container');
+    // If the chat container doesn't exist, create it
+    if (!chatContainer) {
+      chatContainer = document.createElement('div');
+      chatContainer.id = 'chat-container';
+      document.body.appendChild(chatContainer);
+    }
+    // Initialize the Chat component
+    if (window.ChatComponent) {
+      ChatComponent.init('NUIKe0EK7n4UOyRdoi2G','#chat-container');
+    } else {
+      console.error('ChatComponent is not available');
+    }
+  });
+</script>
+            
+    
+</html>  
+
