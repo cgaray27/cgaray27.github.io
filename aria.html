@@ -13,24 +13,41 @@
       
 
             </body>
-<script defer src="https://openai-widget.web.app/ChatComponent.bundle.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // Check if the chat container exists
-    var chatContainer = document.getElementById('chat-container');
-    // If the chat container doesn't exist, create it
-    if (!chatContainer) {
-      chatContainer = document.createElement('div');
-      chatContainer.id = 'chat-container';
-      document.body.appendChild(chatContainer);
-    }
-    // Initialize the Chat component
-    if (window.ChatComponent) {
-      ChatComponent.init('nsV77KtJvukwRR95w9wa','#chat-container');
-    } else {
-      console.error('ChatComponent is not available');
-    }
-  });
+
+<div style="width: 0; height: 0;" id="VG_OVERLAY_CONTAINER">
+    <!-- Here is where TIXAE Agents renders the widget. -->
+    <!-- Set render to 'full-width' then adjust the width and height to 500px (for example) to render the chatbot itself without the popup. -->
+</div>
+
+<!-- Remove 'defer' if you want widget to load faster (Will affect website loading) -->
+<script defer>
+    (function() {
+        window.VG_CONFIG = {
+            ID: "OwfniFISycXvWy3T5mQr", // YOUR AGENT ID
+            region: 'na', // YOUR ACCOUNT REGION 
+            render: 'bottom-right', // can be 'full-width' or 'bottom-left' or 'bottom-right'
+            // modalMode: true, // Set this to 'true' to open the widget in modal mode
+            stylesheets: [
+                // Base TIXAE Agents CSS
+                "https://vg-bunny-cdn.b-cdn.net/vg_live_build/styles.css",
+                // Add your custom css stylesheets, Can also add relative URL ('/public/your-file.css)
+            ],
+            // THIS IS SUPPOSED TO BE CHANGED OR REMOVED.
+            // user: {
+            //     name: 'John Doe', // User's name
+            //     email: 'johndoe@gmail.com', // User's email
+            //     phone: '+1234567890', // User's phone number
+            // }
+            // Optional user data -- end
+            // **
+            // userID: 'USER_ID', // If you want to use your own user_id
+            // autostart: true, // Whether to autostart the chatbot with the proactive message
+        }
+        var VG_SCRIPT = document.createElement("script");
+        VG_SCRIPT.src = "https://vg-bunny-cdn.b-cdn.net/vg_live_build/vg_bundle.js";
+        VG_SCRIPT.defer = true; // Remove 'defer' if you want widget to load faster (Will affect website loading)
+        document.body.appendChild(VG_SCRIPT);
+    })()
 </script>
             
 
