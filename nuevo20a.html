@@ -10,9 +10,9 @@
         <p>This is basically your website here :)</p>
         <p>Did you know that the strongest muscle in the body is the tongue?</p>
 
-        <div style="width: 500px; height: 500px;" id="VG_OVERLAY_CONTAINER">
+        <div style="width: 0; height: 0;" id="VG_OVERLAY_CONTAINER">
     <!-- Here is where CONVOCORE renders the widget. -->
-    <!-- Set width, height for 500px as an example after changing render to 'full-width' -->
+    <!-- Set render to 'full-width' then adjust the width and height to 500px (for example) to render the chatbot itself without the popup. -->
 </div>
 
 <!-- Remove 'defer' if you want widget to load faster (Will affect website loading) -->
@@ -21,7 +21,7 @@
         window.VG_CONFIG = {
             ID: "ew3v8uatjxncva9e", // YOUR AGENT ID
             region: 'na', // YOUR ACCOUNT REGION 
-            render: 'full-width', // Widget position
+            render: 'bottom-right', // Widget position
             // modalMode: true, // Set this to 'true' to open the widget in modal mode
             stylesheets: [
                 "https://vg-bunny-cdn.b-cdn.net/vg_live_build/styles.css"
