@@ -1,1 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Agents HTML Ejemplo</title>
+    </head>
+    <body>
+        <iframe src="https://agencii.ai/custom-gpt/0Biymt9gDpriQRMgrxA7" width="800" height="800" allow="clipboard-read; clipboard-write; microphone *"></iframe>
+    </body>
+</html>    
 
